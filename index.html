@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Paint Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="barra-herramientas">
+      <h2>Herramientas</h2>
+      <button data-tool="brush" title="Dibujar a mano alzada">🖌️ Pincel</button>
+      <button data-tool="line" title="Dibujar una línea recta">📏 Línea</button>
+      <button data-tool="rectangle" title="Dibujar un rectángulo">⬛ Rectángulo</button>
+      <button data-tool="circle" title="Dibujar un círculo">⚪ Círculo</button>
+      <button data-tool="eraser" title="Borrar parte del dibujo">🧽 Borrador</button>
+
+      <h2>Colores</h2>
+      <div class="colores">
+        <button style="background:#000" data-color="#000000"></button>
+        <button style="background:#f00" data-color="#ff0000"></button>
+        <button style="background:#00f" data-color="#0000ff"></button>
+        <button style="background:#0a0" data-color="#008000"></button>
+        <button style="background:#ff0" data-color="#ffff00"></button>
+        <button style="background:#fa0" data-color="#ffa500"></button>
+        <button style="background:#808" data-color="#800080"></button>
+        <button style="background:#840" data-color="#8b4513"></button>
+      </div>
+
+      <h2>Opciones</h2>
+      <button id="clear">🗑️ Limpiar todo</button>
+      <button id="save">💾 Guardar dibujo</button>
+    </aside>
+
+    <main class="lienzo-contenedor">
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
